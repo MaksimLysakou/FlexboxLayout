@@ -1,0 +1,130 @@
+body {
+	margin: 0px;
+}
+
+.main-container {
+	display: flex;				/*use flexboxes*/
+	flex-direction: row;		/*all elements will be locate in a row*/
+	flex-wrap: nowrap;			/*all elements will be locate in ONE row*/
+	justify-content: center;	/*and in center of our page*/
+}
+
+.leftcol {
+	flex-basis: 20%;
+	background-color: #ADADAD;
+
+	padding: 15px;
+
+	display: flex;				
+	flex-direction: column;		
+	flex-wrap: nowrap;			
+}
+
+.rightcol {
+	flex-basis: 60%;
+	background-color: #909090;
+
+	padding: 15px;
+}
+
+/* left column : */
+
+.logo-container {
+	text-align: center;
+}
+
+.logo-container img {
+	max-width: 100%;
+}
+
+.navigation-container {
+	display: flex;				
+	flex-direction: column;		
+	flex-wrap: nowrap;
+
+	padding-top: 50px;
+}
+
+.navigation-element {
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 20px;
+
+	display: flex;				
+	flex-direction: row;		
+	flex-wrap: nowrap;
+
+	font-size: 18px;
+}
+
+.navigation-element a span{
+	margin-right: 5px; 
+}
+
+.navigation-element a {
+	color: #333333;
+	text-decoration: none
+}
+
+/* right column */
+
+
+/* jumbotron style */
+.rightcol .jumbotron {
+	padding: 20px;
+	background-color: #ADADAD;
+}
+.rightcol .jumbotron .btn-primary {
+	color: #fff;
+	background-color: #333333;
+	border-color: #2e2e2e;
+	border-width: 2px;
+
+	margin-top: 15px;
+}
+.rightcol .jumbotron .btn-primary:focus {
+	color: #fff;
+	background-color: #333333;
+	border-color: #202020;
+	border-width: 2px;
+}
+.rightcol .jumbotron .btn-primary:hover {
+	color: #fff;
+	background-color: #222222;
+	border-color: #202020;
+	border-width: 2px;
+}
+.rightcol .jumbotron .btn-primary:active {
+	color: #fff;
+	background-color: #222222;
+	border-color: #202020;
+	border-width: 2px;
+}
+.rightcol .jumbotron .btn-primary:active:focus {
+	color: #fff;
+	background-color: #434343;
+	border-color: #5e5e5e;
+	border-width: 2px;
+} 
+
+.rightcol .email-container {
+	padding: 0px;
+
+	display: flex;				
+	flex-direction: row;	
+	justify-content: flex-end;
+
+	font-size: 18px;
+}
+
+.rightcol .email-container .email-label {
+	flex-basis: 70%;
+}
+
+.rightcol .email-container .input-group {
+	flex-basis: 30%;
+}
+
+.rightcol .row {
+	margin-top: 25px;
+}
