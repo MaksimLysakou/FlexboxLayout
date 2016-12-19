@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "glyphicons";
+  src:url("../fonts/glyphicons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "glyphicons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "glyphicons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-simplenote:before {
+  content: "\62";
+}
+.icon-home:before {
+  content: "\63";
+}
+.icon-buffer:before {
+  content: "\61";
+}
+.icon-content-42:before {
+  content: "\65";
+}
+.icon-facebook:before {
+  content: "\67";
+}
+.icon-google:before {
+  content: "\68";
+}
+.icon-twitter:before {
+  content: "\69";
+}
