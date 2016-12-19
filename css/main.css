@@ -12,6 +12,7 @@ body {
 	margin: auto;
 
 	max-width: 1367px;
+	min-width: 300px;
 }
 
 .content-container hr {
@@ -152,13 +153,14 @@ body {
 
 .cell-item {
   background: #ADADAD;
-  padding: 0;
-  width: 230px;
-  height: 300px;
+  padding: 10px;
+  width: calc((100%/3) - 2em);
+
+  min-height: 300px;
   margin-top: 30px;
   
   color: #333333;
-  text-align: center;
+  text-align: left;
 
   border: solid 2px #333333;
 }
@@ -205,10 +207,13 @@ body {
 
 .footer-links {
 	font-weight: bold;
+	display: flex;				
+	flex-direction: row;		
+	flex-wrap: wrap;
 }
 
 .footer-links a{
-	padding-right: 5px;
+	padding: 0 5px;
 	border-right: 2px solid #333333;
 }
 
@@ -218,7 +223,7 @@ body {
 
 
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
 	.columns-container {
 		display: flex;
 		flex-direction: row;
@@ -248,7 +253,7 @@ body {
 	} 
 }
 
-@media (min-width: 660px) and (max-width: 899px) {
+@media (min-width: 920px) and (max-width: 1099px) {
 	.navigation-element {
 		margin-left: 25px;
 		margin-right: 25px;
@@ -269,7 +274,7 @@ body {
 	}
 }
 
-@media (min-width: 560px) and (max-width: 659px) {
+@media (min-width: 595px) and (max-width: 919px) {
 	.navigation-container {
 		padding-top: 0px;
 		align-items: center;
@@ -281,7 +286,7 @@ body {
 	}
 
 	.navigation-element{
-		padding-right: 10px;
+		padding: 10px;
 		margin-left: 0px;
 		border-right: 2px solid #333333;
 		padding-bottom: 0px;
@@ -292,8 +297,7 @@ body {
 	}
 
 	.navigation-element a span{
-		visibility: hidden; 
-		width: 0px;
+		display: none;
 	}
 
 	.rightcol .jumbotron p {
@@ -306,6 +310,10 @@ body {
 
 	.rightcol .email-container {
 		font-size: 16px;
+	}
+
+	.cell-item {
+	  width: calc((100%/2) - 1em);
 	}
 
 	.cell-item .cell-header {
@@ -325,7 +333,7 @@ body {
 	}
 }
 
-@media (max-width: 559px) {
+@media (max-width: 594px) {
 	.leftcol {
 		flex-direction: column-reverse;		
 	}
@@ -337,24 +345,20 @@ body {
 	}
 
 	.navigation-element {
-		margin-left: 25px;
 		min-width: 0px;
-	}
 
-	.navigation-element{
-		padding-right: 10px;
+		padding: 0 5px;
 		margin-left: 0px;
 		border-right: 2px solid #333333;
 		padding-bottom: 0px;
 	}
 
-	.navigation-element:last-child{
+	.navigation-element:last-child {
 		border-right: 0px;
 	}
 
-	.navigation-element a span{
-		visibility: hidden; 
-		width: 0px;
+	.navigation-element a span { 
+		display: none;
 	}
 
 	.rightcol .jumbotron p {
@@ -385,6 +389,10 @@ body {
 
 	.rightcol .row {
 		margin-top: 25px;
+	}
+
+	.cell-item {
+	  width: 100%;
 	}
 
 	.cell-item .cell-header {
