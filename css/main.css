@@ -188,7 +188,7 @@ body {
 
 	display: flex;				
 	flex-direction: row;		
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;	
 }
 
@@ -402,6 +402,7 @@ body {
 
 	.rightcol .email-container .email-label {
 		width: 100%;
+		text-align: left;
 	}
 
 	.rightcol .email-container .input-group {
